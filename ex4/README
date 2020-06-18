@@ -1,0 +1,29 @@
+alon.shevach
+20595420
+Alon Shevach
+
+A program that runs the known hangman game,
+and a program that checks the function update_word_pattern in the hangman.py file.
+
+section C - q1:
+1st i chose the check first of the function works correctly when given a letter that occur twice in the word,
+that it will update the pattern correctly.
+2nd test is to see if the pattern will not put the letters again if they occur in the pattern already.
+3rd test is to see if the function will correctly update all the characters in the pattern, and return the given word.
+4th test is to test that it wont do anything if the letter is not in the word.
+
+section C -q2 :
+if we needed to change the game to hebrew, first i needed to get a new fuction that
+changes hebrew letters into indexes(for my functions).
+2nd for hint functions, i needed to change the function running on the english indexs of letters
+to 22(if we will play without ending hebrew letters).
+if we play with ending hebrew letter we need to leave it as 22,
+but to convert that normal letters will be understood as last letters too.
+also if there are ending hebrew letters we need to make a function that if the last letter is (ף, ך, ם, ן)
+it needs to change it to the (פ, נ, מ, צ) letter in the wordslist
+, (exept some words ending with normal פ). 
+
+*Design:
+- I think that the main function (run_single_game) should be shorter (dividing it into multiple functions)
+- But in this specific case it would have caused a function with a high number of arguments (4-6) and I
+- thought that it will make the code slower, and it is better to leave it a bit long

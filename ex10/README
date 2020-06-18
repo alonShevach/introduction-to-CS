@@ -1,0 +1,102 @@
+Alon Shevach
+alon.shevach
+205954209
+Nitay Mordechai
+nitay880
+208346817
+A program that runs the asteroids game, according to the instructions.
+
+###########################################
+##################Files####################
+###########################################
+
+-ship.py:
+Contains the ship class, a class represents a ship which has
+position, speed, direction, and life.
+in our game the ship is the user's ship.
+
+-asteroid.py:
+contains the asteroid class, a class that represents the asteroids
+in our game, and can represent any asteroids in game.
+the asteroids has position, speed and size.
+
+-torpedo.py:
+contains the torpedo class, a class that represents the torpedo in
+out game, which is a torpedo getting shot from the ship.
+the torpido in our game distroys asteroids.
+the class gets:
+position, speed, directions.
+
+-point.py:
+This is a class we chose to add, this class represents the
+point of each class on the game board.
+it shows each one as a 'x' and 'y'.
+
+-speed2d.py:
+this is also a class we chose to add, it represents each object's
+speed in the game, because each object has a speed with x's and
+y's. we chose a class to represent them.
+
+####################################################
+#####################part F#########################
+####################################################
+
+1. We chose to add the Point class, because each object in the
+game has a position in the game, adding a Point class helps the
+encapsulation on the game.
+it helps us in discribing each point, also at updating all of the points.
+because we have a Point class it is easier to update each point,
+also if we would like to add the game to be 3 dimention, we could
+update the point and then it would be easier than updating all the classes.
+
+alternative:
+we could give all the object in the classes thier x's and y's coordinates, and update them
+in the classes with method.
+alternative's pros:
+- we would have a class less, which saves computer memory.
+- the game might be a little harder to understand with another class.
+alternative's cons:
+- if we wish to enlarge the game to 3 dimention it would be easier.
+- easier to reach the point's x's and y's.
+- helps the encapsulation of the game.
+
+2. We chose to add the Speed_2d class.
+we chose to make this class, because all the objects in the game
+has speed, and it helps the encapsulation of the game.
+because each object in the game moves, and has a movement speed that
+might change(in our game mainly the ship)
+if we would like to make the asteroids change thier speed, and
+the torpedoes, it makes it much easier if we use the class.
+
+alternative:
+we could give all the object in the classes thier speed,
+then we would make a method inside them that changes it.
+alternative pros:
+- we would have a class less, which saves a computer memory.
+- the game might be a little harder to understand with another class.
+alternative cons:
+- if we would like to add that the topedo changes it speed,
+or the asteroid it would be harder.
+- if we would like to change it to 3 dimention, changing the class
+would be easier.
+- easier to reach each speed's x's and y's
+- helps the encapsulation of the game
+
+3. we chose to make all the moves in the game class.
+we chose not to have the moves of all objects in thier class.we made it because
+we thought it is more understandable.
+also then we needed to have all the moves in the game too, or to update it
+from the other classes.
+also we can update thier move by the method "set_postition"
+we made.
+
+alternative:
+we could make a move method in each class.
+pros:
+- it might help to future games that maybe the objects can move themselves.
+(although we made a method for changing it from outside)
+cons:
+- it makes the game more complex, because we will have to move them in the
+class and also to update that they moved in the game.
+- the game needs to move all the objects simutaniusly, so it would be
+easier and more understandable that the moves are in the game.

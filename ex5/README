@@ -1,0 +1,64 @@
+alon.shevach
+20595420
+Alon Shevach
+a program that finds words in a given matrix, with the given directions.
+the program takes the matrix and the words for the search from 2 given files.
+also the user needs to provide an output file name for the output(which words appear in the matrix,
+and how many times they appear.) and the user provides direction from 8 directions.
+all the program can run from the shell/cmd.
+
+the functions i chose:
+main(args) function:
+this function is the main function, her 'job' is to run all the other functions by thier order,
+also this function is the function recieving the args from the user, and divides it to other arguments
+for the use of the script.
+main function calls the "check_input_args(args)" function, which her 'job' is to
+check if the given arguments fits to the program needs, which are:
+two input files, that the name is written correctly and the files exists,
+and name for an output file(does not have to be existing, the program will make one if not)
+and direction for searching the words.
+after that the main function takes the arguments and divide them to
+thier porposes, first 1 is the name of the words to search, second is
+the matrix, third is the name of the output file, and fourth is the
+directions + checking if there is no direction that appears twice.
+then the main function calls the functions:
+read_matrix_file(filename)
+read_word_list_file(filename)
+find_words_in_matrix(word_list, matrix, directions)
+that are instructed for us to build.
+in find_words_in_matrix i created some sub-functions that are:
+find_word_with_direction(word, matrix, direction)
+and inside the function we use some more functions:
+create_line_for_downwards(matrix)
+reverse_matrix_lines(matrix)
+matrix_turn_upside_down(matrix)
+create_full_diagonal_matrix(matrix)
+reverse_whole_matrix(matrix)
+find_forward_word_in_matrix(word, matrix)
+
+"find_word_with_direction" find single word with a single direction.
+by using the function "find_forward_word_in_matrix".
+the function rotates, reverse and changes the matrix to make the matrix
+become like the direction is from left to right, then it uses the
+"find_forward_word_in_matrix" to find the words from left to right.
+
+create_fulle_diagonal_matrix(matrix), is using another function for building half of
+the diagonal matrix, called "create_half_diagonal_matrix(matrix)".
+
+then after main function takes the results of the search it calls the function
+"write_output_file(results, output_filename)"
+and then it finishes.
+
+check_wordsearch:
+i called the function "test_find_word_with_direction"
+i imported everything because the function needs alot of other functions.
+i created a matrix, and wanted the function to find the words in it.
+1st test i tested if it finds the words from left to right, and with 'w' direction.
+2nd test i tested if the function will do well when the word is can be found twice in the
+same direction, and by using letter in more than 1 word. also checked for the opposite direction.
+3rd tese i tested if the function finds the direction 'd' and if it words well with
+capatilized letters.
+4th test i tried all direction to see if it will find a capatilized letter when i asked for non
+capatilized.
+5th test i tested if it words well with the 'x' direction, and the 'u' direction, also checked
+if the function is doing ok with duplicated directions, not using the same direction twice.

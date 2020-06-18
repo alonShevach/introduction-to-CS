@@ -1,0 +1,26 @@
+alon.shevach
+20595420
+Alon Shevach
+
+in the file we have the Node class, which is a class for each part of the tree.
+we have the class Record, which is a class for illnesses and thier symptoms.
+and we have the diagnoser class, which receives a root for a binary tree,
+and it has methods on that tree.
+methods:
+- diagnose:
+diagnose an illness that fits to the given symptoms, from the tree.
+- calculate success rate:
+calculating the tree's success rate by getting records.
+- all illnesses:
+returns a list with all the illnesses on the tree.
+- most rare illness:
+returns the illness that appears less in the tree.
+- paths to illness:
+finds all the paths to a given illness in a list.
+
+part 2:
+is creating a function that builds a tree by given records and symptoms.
+for this we have the 2 functions build tree and build tree helper.
+and we have the optimal tree, which gets records and symptoms and
+returns the tree with the biggest success rate according to the calculate
+success rate function.

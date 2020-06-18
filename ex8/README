@@ -1,0 +1,17 @@
+alon.shevach
+20595420
+Alon Shevach
+part 1: the sudoku solver, which uses solves the known sudoku game.
+which uses solves the known sudoku game.
+part 2: 3 functions that are based on a function form the tirgul,
+with some changes we've asked to do    
+
+###########################
+#	note              #
+###########################
+in the sudoku function it worked well without the
+list(i made it go from the numbers from 1 to n)
+but it is more effisient that way, because it saves
+alot of time, but takes a little more space, and in the
+lectures they told us time is more important than the space used.
+so i chose to make it that way.

@@ -1,0 +1,167 @@
+Alon Shevach
+alon.shevach
+Nitai Mordechai
+nitay880
+a program that changes a "wav" audio file by the user's input commands.
+it can change the sound in several ways, also can combine 2 'wav' files,
+and combining ther sound.
+and it can create a new file from a text file given from user, and
+it will compose a ryhthm by the notes in the file.
+all the changes can be saved by the user's choice at any time.
+
+functions:
+
+-main_menu()
+The following function is the main menu that appears to the user,
+it shows a list of choices to make in the program on files.
+:return: None
+
+-changing_a_wav_file_menu(sample_rate=None, wav_lst=None)
+if the user chooses too change the wav file, this function will
+ask him how he want to change it and directs to other
+functions to run the changes
+:param sample_rate:
+:param wav_lst:
+:return: None
+
+-composition_menu():
+a menu that appears when
+the user chooses to compose a rhythm from
+a text file.
+:return:
+
+-transition_menu()
+a menu that is appearing when the user has already done 1 action,
+then it asks him if he want to make another change or to save the
+changes in a file.
+alse saves the file if the user wants."""
+-combining_two_wav_files()
+The following function combines two wav files into one,
+the function asks for the user to give two wav files, then
+it combines them by using the function united_wave
+:return: new combined  list of wave data
+
+-ask_input_and_set_files()
+The following gets 2 files from the user
+and returns them to the caller
+:return: 2 file paths
+
+-read_wav_file(filename)
+The following function is reading the file and
+returning a tuple of 2 things.
+first one is the sample rate of the file, and the second is the list of the waves.
+:param file_name: a given file
+:return:frame rate,file's content
+
+-read_composiotion_and_generate_output(compo_file)
+The following takes a name of a file which
+has a proper composition format, and turns it
+into a list of generated wave file.
+:param compo_file: file name
+:return: list that represents the composition in a wave file
+
+-reverse_wave(wave_lst)
+The following function is taking a list
+and reverses it content,
+this way it reverses the waves
+:param wave_lst:
+:return: new reversed list
+
+-accelerate_wave(wave_lst, rate=DEFAULT_SPEED_RATE)
+The following function is getting a list and a rate
+as arguments,
+if the user does not give a rate, the rate will be 2.
+it accelerate it by taking only 1 from the list for each rate
+:param wave_lst:
+:param rate:
+:return: new accelerated wave data
+
+-create_list_for_average(lst1, lst2, lst3=None)
+The following function gets 3 arguments,
+3 lists and create an average of
+their content. if the user is giving 2 lists it gives the average of
+:param lst1:list number 1
+:param lst2:list number 2
+:param lst3:list number 3 (optional)
+:return: list of averages
+
+-slow_down_wave(wave_lst)
+The following function slows down the wave by adding more objects to the list,
+creating a new list which is equal to the previous but
+between 2 objects it inserts the average of them
+:param wave_lst:
+:return: new list of slowed wave date
+
+-change_volume(wave_lst, operator)
+The following function function is changing the volume, either turning it up or down
+by the user's choice. using another function 'change_list_elements_vol to
+change to volume for each list inside the list.
+this funtion gets a list and an operator(UP or DOWN)
+:param wave_lst:
+:param operator:
+:return: new list of volume changed wave
+
+-change_list_elements_vol(wave_lst, operator)
+this function changes the volume of each list, given a operator
+which is if it changes the volume up or down
+:param wave_lst:
+:param operator: Volume up \ Volume down
+:return: new wave data
+-fade_wave(wave_lst)
+this function is doing a 'fade' to the given wave.
+it recieves a list of the wave
+:param wave_lst: a list of wave data
+:return: new faded wave
+
+-united_waves(sample_rate1, sample_rate2, wave_lst1, wave_lst2)
+this function combines the sample rates of 2 files and
+the waves of 2 files.
+the funtion receives the 2 sample rates and the 2 list of waves.
+uses the funtion generate_relevant_list
+:param sample_rate1: sample rate of wave 1
+:param sample_rate2: samvple rate of wave 2
+:param wave_lst1: wave 1
+:param wave_lst2: wave 2
+:return: united wave file
+
+-generate_relevant_list(wave_lst1, sample_rate1, sample_rate2)
+The function gets a list and 2 sample rates, and then creates
+a new list for the relevant objects according to the sample rates
+:param wave_lst1:
+:param sample_rate1:sample rate of list 1
+:param sample_rate2: sample rate of list 2
+:return: relevant chunk in list 1
+
+-wave_union(wave_lst1, wave_lst2)
+this function combine 2 wave lists using the create_list_for_average
+function, and returns the combined list
+:param wave_lst1: wave 1
+:param wave_lst2: wave 2
+:return: combined list
+
+-max_list(lst1, lst2)
+a simple function that checks which list is longer, and return the longer list.
+:param lst1: list 1
+:param lst2: list 2
+:return: the longer list
+
+-gcd(x, y)
+a function that gives the greatest common divisor of 2 numbers, according,
+the gcd algorithm
+:param x: num x
+:param y: num y
+:return: greatest common divisor of x and y
+
+-generate_composition_output(compo_input)
+this function gets a composition input and create a wave list according
+to the given compositions.
+:param compo_input:
+:return: composition wave output (as a list)
+
+-generate_wave_from_range_and_notes(note, duration)
+The following function creates a wave list from given 'notes' and 'durations'
+and then returns the list of them.
+:param note: a single note
+:param duration: time for a single note
+:return: a single wave data list the represents the note
+sound in a specific duration

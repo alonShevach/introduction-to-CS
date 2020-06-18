@@ -1,0 +1,26 @@
+alon.shevach
+20595420
+Alon Shevach
+A program for 10 different functions, using recursions.
+each function is using recursion to make its purpose.
+
+part 3:
+the function is prime, runs on O(n**0.5).
+because this function main use is to run the
+has_divisor_smaller_than function, and this function runs number of time equal to square root of n.
+
+the function print_no_repetition_sequences_helper([a1,a2,...,an],k)
+runs in O(n**k).
+because the function uses a loop, and a recursion inside that loop,
+and it stops the recursions when it gets to a letter with k letter length.
+so it will go n**(the times until it creates a word with k length) == n**k.
+
+the function flood_fill.
+this funtion runs in O(n**2)
+because the worstcase is if the image is nxn and only the outer lines and columns are '*'
+then the function will have to go over (n-1)x(n-1) which means she will go on (n-1)**2 = O(n**2)
+because if searches for each line inside her to all 4 directions, meaning it searches for
+the '.' in each direction(n for each for 4 directions), and it checks n times, in worstcase.
+
+
+

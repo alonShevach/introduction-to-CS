@@ -1,0 +1,39 @@
+alon.shevach
+20595420
+Alon Shevach
+
+-car.py :
+contains a Car class type, each car has its own orientation, location and length.
+from the car orientation and location it has coordinates, and each car can move towards
+its orientation. this time we chose 'udlr' directions.
+
+-board.py:
+contains a Board class type, for board games with cars in them.
+this time we use it for rush hour game.
+each car on the board is Car type cars, and the board has target location
+which is a location the cars needs to arrive to win.
+the board in this game is 7*7 size.
+
+-game.py:
+contains a Game class type, for the rush hour game.
+it gets a json file from the user and uses it to create the cars on the
+board, then it starts the game.
+
+##################################################
+###################Comment########################
+##################################################
+
+IMPORTANT!!
+Board_possible_moves:
+I used 3 nested for loops, but 1 of them runs on 1 object in our game,
+the other runs on 2 objects.
+I chose to do it because if we will want to play another game, the cars
+might be able to move more than 1 space in each direction.
+so the nested loops are not inefficient in out program.
+
+
+less important:
+because i chose to make the board and the game classes to be able to succeed with
+every target's location given, the function '__str__' at board is a little long.
+note that i had a nice and short function, but after adding the function to
+be good with all different target's locations, it became a little long.

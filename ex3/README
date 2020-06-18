@@ -1,0 +1,22 @@
+Alon.shevach
+205954209
+Alon Shevach
+a project that contains alot of function with different porposes,
+1. function that takes inputs and put them seperated on list
+2. finction that receivve a list of strings and combine them to a long string with spaces.
+3. a function that finds the biggest number among a list given.
+4. a function that tests if 2 lists are cyclic diversion of each other.
+5. a function that prints the game seven boom until a chosen number.
+6. a function that tests the histogram of the list and returns it
+7. a function that fives the prime factors of a number.
+8. a function that gives the cartesian multiplication of lists.
+9. a function that gives a list of couples that their sum is equal to a chosen number.
+10. a test for the 3rd funtion, maximum
+i chose those tests because: 1 test was to see if she gets an empty list she returns None, then i checked if all the numbers in the list are equal if it returns only 1, i checked if the list gets only a '0' if she return the '0' or None like an empty list, i checked if she is doing the same with floats, and checked if any of the list index are the maximum if the function finds them.
+last part :
+- cyclic(123, 321): this will make the function crush, because the function should recieve 2 lists, and now it gets 2 ints. this will happen because i used "len(lst1) and len(lst2)" and there is no len for ints.
+- in maximum([-3, -2, -1]): my function will return -1, because my function is checking for the biggest number by using math expressions (<, >, =) and because of that -1>-2>-3 so it will return -1.
+- in maximum([1, 10, 100, 'intro']): this will make the function crush, because i used math expression(<, >) and intro is a string, so it cant be compared to ints, this will make my function crush.
+- in histogram(3, [1, 2, 3, 4]): the function will return [0, 1, 1], it will return that because in the range(0, 3) we have 1,2 and also in the list, so it will show that 1 and 2 appears in the 1st and 2nd place of the range of 3.
+- prime factors(0): it will return an empty group [], because 0 is not a prime number , and it doesnt divide by and other number exept himself and 1,(1 and 0 doesnt belong to the prime numbers), in my function it wont give [0] because my "divisor" starts from 2 (the smallest prime number) so it wont try to divide by 0 of course.
+-pairs ([0, 0, 1, 1, 2, 2], 2) will return [[0, 2], [0, 2], [0, 2], [0,2], [1, 1]], the reason it will return this, is that in the function we were told that the list wont have the same digit twice, and here all the numbers in the list come twice, also because there are two '0' and two '2' it gives it 4 times because 0+2=2 (0+int= int) so it will give this solution.

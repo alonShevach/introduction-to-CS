@@ -1,0 +1,22 @@
+Alon Shevach
+alon.shevach
+Nitay Mordechai
+nitay880
+a program that runs the four in a row game, also making the animations.
+the program has 3 different type of games, computer vs computer, player vs computer
+and player vs player.
+in the folder we have 3 files.
+
+- ai.py:
+this file is the computer thinking file, it creates the turn for the computer randomly.
+also it knows what is the last move player by this computer.
+
+- game.py:
+this file contain the main game functions, getting a winner moving balls in the board.
+this file does not involve in the animation, only on the gameplay.
+
+-four in a row.py:
+this is the main file, running the game using all the other files.
+this file main objective is to run the animation according to the game and the
+ai moves.
+this file is the only file involved in the annimation.
