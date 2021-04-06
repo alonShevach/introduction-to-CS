@@ -1,6 +1,5 @@
 ###################################################################
-# FILE : board.py                                                   #
-# WRITER : alon shevach , alon.shevach , 20595420                 #
+# FILE : board.py                                                 #
 # EXERCISE : intro2cs1 ex9 2018-2019                              #
 # DESCRIPTION: a file for class board, for board in rush hour game#
 ###################################################################
