@@ -1,6 +1,5 @@
 ######################################################################
-# FILE : game.py                                                      #
-# WRITER : alon shevach , alon.shevach , 20595420                    #
+# FILE : game.py                                                     #
 # EXERCISE : intro2cs1 ex9 2018-2019                                 #
 # DESCRIPTION: a file for class game for rush hour game, also runs   #
 # the rush hour game, with default settings and with json file given #
