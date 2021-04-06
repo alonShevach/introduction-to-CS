@@ -1,6 +1,5 @@
 #############################################################
 # FILE : hello_turtle.py
-# WRITER : alon shevach , alon.shevach , 20595420
 # EXERCISE : intro2cs1 ex1 2018-2019
 # DESCRIPTION: A program that draws 3 flowers.
 #############################################################
