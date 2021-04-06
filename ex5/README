@@ -1,6 +1,4 @@
-alon.shevach
-20595420
-Alon Shevach
+
 a program that finds words in a given matrix, with the given directions.
 the program takes the matrix and the words for the search from 2 given files.
 also the user needs to provide an output file name for the output(which words appear in the matrix,
