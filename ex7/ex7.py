@@ -1,6 +1,5 @@
 ##############################################################
 # FILE : ex7.py                                              #
-# WRITER : alon shevach , alon.shevach , 20595420            #
 # EXERCISE : intro2cs1 ex7 2018-2019                         #
 # DESCRIPTION: 10 function that have different purposes, all #
 # using recursions for running the function.                 #
