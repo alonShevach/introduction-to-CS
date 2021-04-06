@@ -1,6 +1,5 @@
 #################################################################
 # FILE : wordsearch.py                                          #
-# WRITER : Alon Shevach , alon.shevach , 20595420               #
 # EXERCISE : intro2cs1 ex5 2018-2019                            #
 # DESCRIPTION: A program that runs the known word search on a   #
 # matrix chosen by user, and that is running from commandline   #
