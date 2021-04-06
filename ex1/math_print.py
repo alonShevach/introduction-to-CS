@@ -1,6 +1,5 @@
 #############################################################
 # FILE : math_print.py
-# WRITER : alon shevach , alon.shevach , 20595420
 # EXERCISE : intro2cs1 ex1 2018-2019
 # DESCRIPTION: A program that prints an answer to some math questions.
 #############################################################
