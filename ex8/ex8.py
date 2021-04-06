@@ -1,6 +1,5 @@
 ###################################################################################
 # FILE : ex8.py                                                                   #
-# WRITER : alon shevach , alon.shevach , 20595420                                 #
 # EXERCISE : intro2cs1 ex8 2018-2019                                              #
 # DESCRIPTION: part 1: the sudoku solver, which uses solves the known sudoku game.#
 # which uses solves the known sudoku game.                                        #
