@@ -1,6 +1,5 @@
 ################################################################
 # FILE : ex11.py                                               #
-# WRITER : alon shevach , alon.shevach , 20595420              #
 # EXERCISE : intro2cs1 ex11 2018-2019                          #
 # DESCRIPTION: 3 class types, Node, Record and Diagnoser,      #
 # and 2 functions, one that builds a tree, another that builds #
