@@ -1,6 +1,5 @@
 ###############################################################################
 # FILE : check_wordsearch.py                                                  #
-# WRITER : Alon Shevach , alon.shevach , 20595420                             #
 # EXERCISE : intro2cs1 ex5 2018-2019                                          #
 # DESCRIPTION: A program that tests the function 'find_words_with_directions, #
 # the function is part of the find_words_in_matrix function.                  #
