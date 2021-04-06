@@ -1,6 +1,3 @@
-alon.shevach
-20595420
-Alon Shevach
 
 in the file we have the Node class, which is a class for each part of the tree.
 we have the class Record, which is a class for illnesses and thier symptoms.
