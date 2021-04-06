@@ -1,7 +1,3 @@
-alon.shevach
-20595420
-Alon Shevach
-
 -car.py :
 contains a Car class type, each car has its own orientation, location and length.
 from the car orientation and location it has coordinates, and each car can move towards
