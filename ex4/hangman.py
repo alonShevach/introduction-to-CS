@@ -1,6 +1,5 @@
 #############################################################
 # FILE : hangman.py                                         #
-# WRITER : alon shevach , alon.shevach , 20595420           #
 # EXERCISE : intro2cs1 ex4 2018-2019                        #
 # DESCRIPTION: A program that runs the known hangman game   #
 #############################################################
