@@ -1,6 +1,5 @@
 #################################################################
 # FILE : car.py                                                 #
-# WRITER : alon shevach , alon.shevach , 20595420               #
 # EXERCISE : intro2cs1 ex9 2018-2019                            #
 # DESCRIPTION: a file for class car, for cars in rush hour game #
 #################################################################
