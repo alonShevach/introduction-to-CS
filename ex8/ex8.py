@@ -13,8 +13,7 @@
 ######################################
 
 import copy
-import sys
-
+import generate_random_soduko
 EMPTY_SLOT = 0
 
 
@@ -400,5 +399,4 @@ def return_k_subsets_helper(n, k, picked):
     return res
 
 if __name__ == "__main__":
-    mt = sys.argv
-    solve_sudoku(mt)
+    solve_sudoku(generate_soduko())
