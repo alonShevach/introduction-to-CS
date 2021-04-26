@@ -1,14 +1,15 @@
 import numpy as np
+from random import sample
+
 def generate_sudoku():
     base = 3
     side = base * base
 
     # pattern for a baseline valid solution
-    def pattern(r, c): return (base * (r % base) + r // base + c) % side
+    pattern = lambda r, c: (base * (r % base) + r // base + c) % side
 
     # randomize rows, columns and numbers (of valid base pattern)
-    from random import sample
-    def shuffle(s): return sample(s, len(s))
+    shuffle = lambda s: sample(s, len(s))
 
     rBase = range(base)
     rows = [g * base + r for g in shuffle(rBase) for r in shuffle(rBase)]
