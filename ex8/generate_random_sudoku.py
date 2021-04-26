@@ -24,6 +24,3 @@ def generate_sudoku():
 
     numSize = len(str(side))
     return board
-
-if __name__ == "__main__":
-    print(generate_sudoku())
