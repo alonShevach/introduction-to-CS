@@ -53,7 +53,8 @@ def solve_sudoku(board):
     # If all the numbers in the dictonary are n, it means the board is full.
     if checks_if_all_values_are_n_in_dict(times_appeared_dict, n):
         board = playable_board
-        print(playable_board)
+        for line in playable_board:
+            print(line)
         return True
     # if the board is not full, it cannot be filled.
     return False
@@ -402,6 +403,7 @@ def return_k_subsets_helper(n, k, picked):
 if __name__ == "__main__":
     s = generate_random_sudoku.generate_sudoku()
     print("the sudoku: ")
-    print(s)
+    for line in s:
+        print(line)
     print("solution: ")
     solve_sudoku(s)
