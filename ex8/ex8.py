@@ -13,7 +13,7 @@
 ######################################
 
 import copy
-
+import sys
 
 EMPTY_SLOT = 0
 
@@ -398,3 +398,7 @@ def return_k_subsets_helper(n, k, picked):
             lst.append(i)
         res += temporary_lst
     return res
+
+if __name__ == "__main__":
+    mt = sys.argv
+    solve_sudoku(mt)
